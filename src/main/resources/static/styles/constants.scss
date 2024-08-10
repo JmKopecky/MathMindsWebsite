@@ -5,18 +5,6 @@ $headingFamily: "Montserrat", sans;
 
 $primary: #fdfdfd;
 $secondary: #020202;
-$accent: #600060;
-
-
-.darkmode-background {
-  background: $secondary;
-}
-.darkmode-content {
-  color: $primary;
-}
-a.darkmode-content:hover {
-  color: $accent;
-}
 
 
 body {
@@ -30,31 +18,37 @@ h1 {
   font-family: $headingFamily;
   font-weight: 800;
   margin: 0;
+  font-size: 2.25em;
 }
 h2 {
   font-family: $headingFamily;
   font-weight: 700;
   margin: 0;
+  font-size: 2em;
 }
 h3 {
   font-family: $headingFamily;
   font-weight: 600;
   margin: 0;
+  font-size: 1.75em;
 }
 h4 {
   font-family: $headingFamily;
   font-weight: 500;
   margin: 0;
+  font-size: 1.5em;
 }
 h5 {
   font-family: $headingFamily;
   font-weight: 400;
   margin: 0;
+  font-size: 1.35em;
 }
 h6 {
   font-family: $headingFamily;
   font-weight: 400;
   margin: 0;
+  font-size: 1.2em;
 }
 
 p {
@@ -68,13 +62,37 @@ a {
   font-family: $paragraphFamily;
   text-decoration: none;
   margin: 0;
-  transition: color 0.5s, font-weight 0.5s;
-}
-a:hover, a *:hover {
-  color: $accent;
-  font-weight: 900;
 }
 
-a * {
-  transition: color 0.5s, font-weight 0.5s;
+
+
+.darkmode-background {
+  background: $secondary;
+}
+.darkmode-content {
+  color: $primary;
+}
+a.darkmode-content {
+  color: $primary;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+  color: $primary;
+  background: $secondary;
+}
+
+::selection {
+  color: $primary;
+  background: $secondary;
+}
+
+.darkmode-content::-moz-selection { /* Code for Firefox */
+  background: $primary;
+  color: $secondary;
+}
+
+.darkmode-content::selection {
+  background: $primary;
+  color: $secondary;
 }

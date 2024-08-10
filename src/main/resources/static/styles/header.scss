@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-right: 3%;
+  position: relative;
 
   h1 {
     flex: 1;
@@ -13,7 +16,20 @@
   }
 }
 
-@media (max-width: 650px) {
+
+#header::after {
+  content:'';
+  position:absolute;
+  display: block;
+  background-color: $secondary;
+  width:90%;
+  height: 3px;
+  bottom:0;
+  left:5%;
+}
+
+
+@media (max-aspect-ratio: 1/1) {
   #header {
     display: flex;
     flex-wrap: wrap;
@@ -26,10 +42,9 @@
     a {
       width: fit-content;
       display: block;
-      h4 {
+      h5 {
         width: fit-content;
       }
     }
   }
-
 }

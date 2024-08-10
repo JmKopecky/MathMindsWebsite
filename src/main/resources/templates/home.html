@@ -3,33 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/styles/home.css">
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script type="text/javascript" src="/js/AnimConfig.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
 <div id="header">
     <h1>MathMinds</h1>
-    <a href="/events"><h4>Events</h4></a>
-    <a href="/competition"><h4>Competition</h4></a>
-    <a href="/ambassadors"><h4>Ambassadors</h4></a>
-    <a href="/leadership"><h4>Leadership</h4></a>
+    <a href="/events"><h5>Events</h5></a>
+    <a onclick="scrollToCompetitor()"><h5>Competition</h5></a>
+    <a href="/ambassadors"><h5>Ambassadors</h5></a>
+    <a href="/leadership"><h5>Leadership</h5></a>
 </div>
 
 <div id="content">
+    <div id="hero">
+        <h1>We Believe In Fostering Curiosity</h1>
+    </div>
 
+    <div id="about-container" data-lenis-scroll-snap-align="start">
+        <div id="about-title-container">
+            <h1>Curious?</h1>
+        </div>
+        <div id="about-sidebar">
+            <div class="about-tile darkmode-background">
+                <h2 class="darkmode-content">Our Focus Is STEM</h2>
+                <p class="darkmode-content">Math and problem-solving skills are vital in today's world. The earlier that these abilities can be developed, the stronger they can grow to be. That's where we come in.</p>
+            </div>
+            <div class="about-tile darkmode-background">
+                <h2 class="darkmode-content">Sure, But Who Are We?</h2>
+                <p class="darkmode-content">MathMinds is a student-led non-profit organization. We started as a club at Goose Creek Memorial high school. But we aren't content with just being a club.</p>
+            </div>
+            <div class="about-tile darkmode-background">
+                <h2 class="darkmode-content">Call Us Ambitious</h2>
+                <p class="darkmode-content">To achieve our goal, we seek to collaborate with educators and schools. In or outside our district; expanding offers ever-increasing opportunities to help students.</p>
+            </div>
+            <div class="about-tile darkmode-background">
+                <h2 class="darkmode-content">Learning Can Be Hard</h2>
+                <p class="darkmode-content">Sometimes resources can be gated, outdated, or simply a struggle to use — and that's if they get found at all. Offering a variety of ways for students to enhance their learning in STEM is a core part of our strategy.</p>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+
+    <div id="competition-container" class="darkmode-background">
+        <h1 class="darkmode-content">We're Not Just Talk</h1>
+        <h4 class="darkmode-content">Competition breeds not only innovation, but motivation. And when your market consists of young students, motivation is vital to fueling the spark of intelligence.</h4>
+        <h2 class="darkmode-content">Which is why we have crafted a new math-focused tournament.</h2>
+        <h4 class="darkmode-content">In collaboration with educators, we invite junior high students to challenge themselves. We invite them to invest the time in learning a diverse combination of math topics. Some they may already be confident in, and some that may present a novel problem for them to solve.</h4>
+        <a href="/competition" class="darkmode-content"><h2>Learn More</h2></a>
+    </div>
+
+    <div id="events-container">
+
+    </div>
+
+    <div id="gallery-container">
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="darkmode-background gallery-tile">
+            <div class="darkmode-background photo-container">
+                <img src="/images/404image.png">
+            </div>
+            <p class="darkmode-content">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <div id="ambassador-container">
+        <h1>But We Can't Do It Alone</h1>
+    </div>
 </div>
 
 <div id="footer" class="darkmode-background">
     <h2 class="darkmode-content">MathMinds</h2>
     <div id="footer-left">
-        <a href="mailto:mathmindsacademy576@gmail.com"><h4 class="darkmode-content">mathmindsacademy576@gmail.com</h4></a>
-        <a href="https://linktr.ee/MathMindsAcademy576"><h4 class="darkmode-content">Linktree</h4></a>
-        <a href="https://www.instagram.com/mathmindsacademy576"><h4 class="darkmode-content">Instagram</h4></a>
+        <a href="mailto:mathmindsacademy576@gmail.com"><h6 class="darkmode-content">mathmindsacademy576@gmail.com</h6></a>
+        <a href="https://linktr.ee/MathMindsAcademy576"><h6 class="darkmode-content">Linktree</h6></a>
+        <a href="https://www.instagram.com/mathmindsacademy576"><h6 class="darkmode-content">Instagram</h6></a>
     </div>
     <div id="footer-right">
-        <h4 class="darkmode-content">Goose Creek Memorial High School</h4>
-        <h4 class="darkmode-content">6001 E Wallisville Rd</h4>
-        <h4 class="darkmode-content">Baytown, TX 77521</h4>
+        <h6 class="darkmode-content">Goose Creek Memorial High School</h6>
+        <h6 class="darkmode-content">6001 E Wallisville Rd</h6>
+        <h6 class="darkmode-content">Baytown, TX 77521</h6>
     </div>
 </div>
 
