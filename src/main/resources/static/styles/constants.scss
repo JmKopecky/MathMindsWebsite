@@ -11,4 +11,62 @@ body {
   font-family: $paragraphFamily;
   background: $primary;
   color: $secondary;
+  margin: 0;
+}
+
+h1 {
+  font-family: $headingFamily;
+  font-weight: 800;
+  margin: 0;
+}
+h2 {
+  font-family: $headingFamily;
+  font-weight: 700;
+  margin: 0;
+}
+h3 {
+  font-family: $headingFamily;
+  font-weight: 600;
+  margin: 0;
+}
+h4 {
+  font-family: $headingFamily;
+  font-weight: 500;
+  margin: 0;
+}
+h5 {
+  font-family: $headingFamily;
+  font-weight: 400;
+  margin: 0;
+}
+h6 {
+  font-family: $headingFamily;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-family: $paragraphFamily;
+  margin: 0;
+}
+
+a {
+  position:relative;
+  color: mix($secondary, $accent, 5%);
+  font-family: $paragraphFamily;
+  text-decoration: none;
+  margin: 0;
+}
+a::after {
+  content:'';
+  position:absolute;
+  background-color: $accent;
+  width:0%;
+  height: 3px;
+  bottom:0;
+  left:0;
+  transition: width 0.5s;
+}
+a:hover::after {
+  width:100%;
 }

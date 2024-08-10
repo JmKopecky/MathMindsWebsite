@@ -1,0 +1,35 @@
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+
+  h1 {
+    flex: 1;
+    margin-left: 5%;
+  }
+  a {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 650px) {
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      width: 100%;
+      flex-basis: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+    a {
+      width: fit-content;
+      display: block;
+      h4 {
+        width: fit-content;
+      }
+    }
+  }
+
+}

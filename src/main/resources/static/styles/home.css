@@ -3,6 +3,105 @@ body {
   font-family: "Barlow Condensed", sans;
   background: #fdfdfd;
   color: #020202;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans;
+  font-weight: 800;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans;
+  font-weight: 600;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Montserrat", sans;
+  font-weight: 500;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Montserrat", sans;
+  font-weight: 400;
+  margin: 0;
+}
+
+h6 {
+  font-family: "Montserrat", sans;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-family: "Barlow Condensed", sans;
+  margin: 0;
+}
+
+a {
+  position: relative;
+  color: #5b005b;
+  font-family: "Barlow Condensed", sans;
+  text-decoration: none;
+  margin: 0;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #600060;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+}
+#header h1 {
+  flex: 1;
+  margin-left: 5%;
+}
+#header a {
+  margin-right: 2%;
+}
+
+@media (max-width: 650px) {
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #header h1 {
+    width: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  #header a {
+    width: fit-content;
+    display: block;
+  }
+  #header a h4 {
+    width: fit-content;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

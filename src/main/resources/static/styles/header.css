@@ -1,0 +1,15 @@
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+}
+#header h1 {
+  flex: 1;
+  margin-left: 5%;
+}
+#header a {
+  margin-right: 2%;
+}
+
+/*# sourceMappingURL=header.css.map */
