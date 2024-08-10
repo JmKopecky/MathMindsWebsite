@@ -7,6 +7,18 @@ $primary: #fdfdfd;
 $secondary: #020202;
 $accent: #600060;
 
+
+.darkmode-background {
+  background: $secondary;
+}
+.darkmode-content {
+  color: $primary;
+}
+a.darkmode-content:hover {
+  color: $accent;
+}
+
+
 body {
   font-family: $paragraphFamily;
   background: $primary;
@@ -52,21 +64,17 @@ p {
 
 a {
   position:relative;
-  color: mix($secondary, $accent, 5%);
+  color: $secondary;
   font-family: $paragraphFamily;
   text-decoration: none;
   margin: 0;
+  transition: color 0.5s, font-weight 0.5s;
 }
-a::after {
-  content:'';
-  position:absolute;
-  background-color: $accent;
-  width:0%;
-  height: 3px;
-  bottom:0;
-  left:0;
-  transition: width 0.5s;
+a:hover, a *:hover {
+  color: $accent;
+  font-weight: 900;
 }
-a:hover::after {
-  width:100%;
+
+a * {
+  transition: color 0.5s, font-weight 0.5s;
 }
