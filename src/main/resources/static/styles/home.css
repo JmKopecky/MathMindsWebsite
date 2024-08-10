@@ -287,11 +287,73 @@ body {
 
 #events-container {
   min-height: 50vh;
+  position: relative;
+}
+#events-container h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+}
+#events-container .event-tile {
+  width: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  overflow: clip;
+  margin-left: 15%;
+  position: relative;
+}
+#events-container .event-tile h2 {
+  float: left;
+  width: 50%;
+}
+#events-container .event-tile .event-info-container {
+  float: right;
+  width: 50%;
+}
+#events-container .event-tile .event-info-container h3 {
+  padding-bottom: 2.5vh;
+}
+#events-container .event-tile .event-info-container p {
+  padding-top: 2.5vh;
+  position: relative;
+}
+#events-container .event-tile .event-info-container p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #020202;
+  width: 20%;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+#events-container .event-tile::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #020202;
+  width: 70%;
+  height: 2px;
+  top: 0;
+  left: 15%;
+}
+
+#events-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #020202;
+  width: 90%;
+  height: 3px;
+  bottom: 0;
+  left: 5%;
 }
 
 #gallery-container {
   height: 80vh;
   width: 100%;
+  margin-top: 10vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
