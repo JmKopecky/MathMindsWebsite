@@ -4,7 +4,7 @@
   h2 {
     width: 100%;
     text-align: center;
-    margin-top: 10%;
+    padding-top: 2vh;
   }
 
   #footer-left {
@@ -23,5 +23,19 @@
   h4 {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  #footer {
+    height: fit-content;
+
+    #footer-left, #footer-right {
+      width: 100%;
+      position:unset;
+      text-align: center;
+      padding-top: 2.5vh;
+      padding-bottom: 2.5vh;
+    }
   }
 }
