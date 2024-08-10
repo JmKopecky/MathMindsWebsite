@@ -61,6 +61,21 @@ a {
   margin: 0;
 }
 
+button {
+  width: fit-content;
+  text-align: center;
+  padding: 1em;
+  background: #fdfdfd;
+  border: 1px solid #020202;
+  color: #020202;
+  transition: background 0.5s, color 0.5s;
+}
+
+button:hover {
+  background: #020202;
+  color: #fdfdfd !important;
+}
+
 .darkmode-background {
   background: #020202;
 }
@@ -71,6 +86,21 @@ a {
 
 a.darkmode-content {
   color: #fdfdfd;
+}
+
+button.darkmode-content {
+  width: fit-content;
+  text-align: center;
+  padding: 1em;
+  background: #020202;
+  border: 1px solid #fdfdfd;
+  color: #fdfdfd;
+  transition: background 0.5s, color 0.5s;
+}
+
+button.darkmode-content:hover {
+  background: #fdfdfd;
+  color: #020202 !important;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -283,6 +313,11 @@ body {
   padding-top: 5vh;
   padding-bottom: 5vh;
   text-align: center;
+  display: block;
+}
+#competition-container h4 button, #competition-container h2 button, #competition-container a button {
+  width: fit-content;
+  height: fit-content;
 }
 
 #events-container {
@@ -393,10 +428,49 @@ body {
 #ambassador-container {
   min-height: 50vh;
   position: relative;
+  padding-bottom: 20vh;
 }
 #ambassador-container h1 {
   padding-top: 8vh;
   margin-left: 5%;
+}
+#ambassador-container .center {
+  width: 100%;
+  padding-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+#ambassador-container .center h4 {
+  max-width: 60%;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  position: relative;
+}
+#ambassador-container .center h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #020202;
+  width: 1px;
+  height: 19vh;
+  bottom: -20vh;
+  left: 50%;
+}
+#ambassador-container .center h4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #020202;
+  width: 90%;
+  height: 1px;
+  bottom: -1vh;
+  left: 5%;
+}
+#ambassador-container .center button {
+  margin-top: 20vh;
 }
 
 #ambassador-container::before {

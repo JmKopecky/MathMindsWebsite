@@ -114,6 +114,11 @@ body {
     padding-top: 5vh;
     padding-bottom: 5vh;
     text-align: center;
+    display: block;
+    button {
+      width: fit-content;
+      height: fit-content;
+    }
   }
 }
 
@@ -228,9 +233,48 @@ body {
 #ambassador-container {
   min-height: 50vh;
   position: relative;
+  padding-bottom: 20vh;
   h1 {
     padding-top: 8vh;
     margin-left: 5%;
+  }
+  .center {
+    width: 100%;
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    h4 {
+      max-width: 60%;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      position: relative;
+    }
+    h4::after {
+      content:'';
+      position:absolute;
+      display: block;
+      background-color: $secondary;
+      width:1px;
+      height: 19vh;
+      bottom:-20vh;
+      left:50%;
+    }
+    h4::before {
+      content:'';
+      position:absolute;
+      display: block;
+      background-color: $secondary;
+      width:90%;
+      height: 1px;
+      bottom:-1vh;
+      left:5%;
+    }
+    button {
+      margin-top: 20vh;
+    }
   }
 }
 #ambassador-container::before {

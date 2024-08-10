@@ -26,11 +26,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
-function scrollToCompetitor() {
-    const competitorTarget = document.getElementById("competition-container");
-    const options = {
-        duration: 3,
-
-    }
-    lenis.scrollTo(competitorTarget, options);
+function scrollToTarget(id) {
+    const target = document.getElementById(id);
+    const options = {duration: 3,}
+    lenis.scrollTo(target, options);
 }

@@ -64,6 +64,19 @@ a {
   margin: 0;
 }
 
+button {
+  width: fit-content;
+  text-align: center;
+  padding: 1em;
+  background: $primary;
+  border: 1px solid $secondary;
+  color: $secondary;
+  transition: background 0.5s, color 0.5s;
+}
+button:hover {
+  background: $secondary;
+  color: $primary !important;
+}
 
 
 .darkmode-background {
@@ -74,6 +87,19 @@ a {
 }
 a.darkmode-content {
   color: $primary;
+}
+button.darkmode-content {
+  width: fit-content;
+  text-align: center;
+  padding: 1em;
+  background: $secondary;
+  border: 1px solid $primary;
+  color: $primary;
+  transition: background 0.5s, color 0.5s;
+}
+button.darkmode-content:hover {
+  background: $primary;
+  color: $secondary !important;
 }
 
 
